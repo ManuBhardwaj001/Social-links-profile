@@ -1,34 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        background: #000000;
+        margin: 0;
+        padding: 0;
+      }
+      .background {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+      .main {
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: 90vh;
+        width: 80%;
+        background-color: hsl(0, 0%, 8%);
+      }
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      .login {
+        display: flex;
+        height: 25rem;
+        justify-content: center;
+        width: 17rem;
+        background-color: hsl(0, 0%, 12%);
+        border-radius: 0.3rem;
+        flex-direction: column;
+      }
+      .profile {
+        position: absolute;
+        top: 27%;
+        background: transparent;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .profile > img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+      }
+      .name {
+        display: flex;
+        justify-content: center;
+        padding-top: 6rem;
+        background: inherit;
+      }
+      .name > h3 {
+        color: #fff;
+        background: inherit;
+        font-weight: 600;
+      }
+      .place {
+        display: flex;
+        padding-top: 0.3rem;
+        justify-content: center;
+        background: inherit;
+      }
+      .place > h6 {
+        font-weight: 400;
+        color: hsl(75, 94%, 57%);
+        background: inherit;
+      }
+      .intro {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        color: #fff;
+        background: inherit;
+      }
+      .intro > p {
+        font-size: 0.6rem;
+        background: inherit;
+      }
+      .buttons {
+        display: flex;
+        padding-top: 1rem;
+        background: inherit;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .buttons > button {
+        cursor: pointer;
+        background: hsl(0, 0%, 20%);
+        color: #fff;
+        width: 15rem;
+        height: 2rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 0.3rem;
+        transition: background-color 0.3s ease;
+      }
+      .buttons > button:hover {
+        background-color: hsl(0, 0%, 30%);
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <div class="background">
+        <div class="main">
+          <div class="login">
+            <div class="profile"><img src="avatar-jessica.jpeg" alt="" /></div>
+            <div class="name">
+              <h3>Jessica Randall</h3>
+            </div>
+            <div class="place">
+              <h6>London, United Kingdom</h6>
+            </div>
+            <div class="intro">
+              <p>"Front-end developer and avid reader."</p>
+            </div>
+            <div class="buttons">
+              <button>GitHub</button>
+              <button>Frontend Mentor</button>
+              <button>LinkedIn</button>
+              <button>Twitter</button>
+              <button>Instagram</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Manu Bhardwaj</a>.
+    </div>
+  </body>
 </html>
