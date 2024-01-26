@@ -33,11 +33,11 @@
   flex-direction: column;
 }
 .profile {
-  position: absolute;
-  top: 25%;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: transparent;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .profile > img {
   height: 60px;
@@ -47,7 +47,7 @@
 .name {
   display: flex;
   justify-content: center;
-  padding-top: 6rem;
+  padding-top: 2rem;
   background: inherit;
 }
 .name > h3 {
